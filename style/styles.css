@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 5%;
+    background: rgba(170, 102, 102, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adds spacing between logo and name */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Increased spacing between menu items */
+    margin-left: 30px; /* Adds space between Sultana and menu items */
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: yellow;
+}
+
+.name {
+    font-size: 28px;
+    font-weight: bolder;
+    color: darkmagenta;
+}
+
+.btn-primary {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: palevioletred;
+    color: maroon;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+
+.back {
+    background-image: url(../pic/bg.avif);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 50px;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.back img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.back .text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.back h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.back h1 span {
+    color: darkmagenta;
+    font-weight: bold;
+}
+
+.back h1:first-child {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.back p {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.dark {
+    background-color: bisque;
+    color: brown;
+}
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 80px 10%;
+    background-color: white;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px; /* Made the paragraph text smaller */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Personal Info Section */
+.personal-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ccc;
+}
+
+.info-item {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+}
+.info-item strong {
+    font-weight: bold;
+    color: black;
+}
+.about-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+/* Qualifications Section */
+.qualifications {
+    padding: 80px 10%;
+    background-color: #f9f9f9; /* Light background to separate the section */
+    text-align: center;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: black;
+}
+
+/* Qualifications Container */
+.qualifications-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Qualification Boxes */
+.qualification-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: left;
+}
+
+.qualification-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkmagenta;
+    margin-bottom: 15px;
+}
+
+.qualification-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+/* Categories Section */
+.categories {
+    padding: 80px 10%;
+    background-color: white;
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Category Boxes */
+.category-box {
+    background: #fce8dd; /* Light peach background */
+    padding: 30px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Logo Placeholder */
+.category-logo img {
+    width: 80px; /* Adjust logo size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Category Titles */
+.category-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: hotpink;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+/* Category Description */
+.category-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+/* Experience Section */
+.experience {
+    padding: 80px 10%;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+/* Experience Container */
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Experience Boxes */
+.experience-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title Styling */
+.experience-box h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: darkmagenta;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Description Styling */
+.experience-box p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsive Design: Single Column on Small Screens */
+@media (max-width: 768px) {
+    .experience-container {
+        grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 10%;
+    background-color: #fce8dd; /* Light peach background */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Side: Contact Info */
+.contact-info {
+    max-width: 50%;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+/* Right Side: Contact Form */
+.contact-form {
+    max-width: 45%;
+    background: none;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(69, 14, 49);
+    margin-bottom: 15px;
+}
+
+/* Form Fields */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 120px;
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: rgb(255, 0, 98);
+}
+
